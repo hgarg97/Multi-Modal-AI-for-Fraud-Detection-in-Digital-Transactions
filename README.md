@@ -23,8 +23,32 @@ This project implements a **multi-modal and hybrid fraud detection system** that
 
 ## 🏗️ Installation
 
-1. Clone the repository:
-2. Install dependencies:
+1. Clone the repository
+2. Install dependencies
+
+### **📂 GitHub Repository Structure**
+
+```
+fraud-detection-project/
+│── data/                        # Data folder (CSV, JSON, etc.)
+│── notebooks/                    # Jupyter Notebooks for initial experiments
+│── src/                           # Source Code
+│   │── data_preprocessing.py      # Data Cleaning & Feature Engineering
+│   │── transaction_model.py       # ML Model for structured data
+│   │── text_fraud_detection.py    # NLP model (BERT, GPT) for text-based fraud
+│   │── image_fraud_detection.py   # CNN model for document forgery detection
+│   │── graph_fraud_analysis.py    # Graph-based fraud detection (Neo4j, NetworkX)
+│   │── ensemble_model.py          # Combine models into a final fraud classifier
+│   │── utils.py                   # Helper functions (data loaders, logging, etc.)
+│── configs/                       # Config files for hyperparameters, file paths
+│── requirements.txt                # Required libraries
+│── README.md                       # Project documentation
+│── tests/                          # Unit tests for functions and models
+│── scripts/                        # Scripts for automation (training, evaluation)
+│── app/                            # (Future) API or UI for fraud detection
+```
+
+---
 
 ## 🎯 Roadmap
 
